@@ -18,7 +18,7 @@ export async function PATCH(req: Request) {
     const username = await db.user.findFirst({
       where: {
         username: name,
-      },
+      }
     })
 
     if (username) {

@@ -1,4 +1,5 @@
 import { db } from "@/lib/db"
+//prisma =new prismaCliend()
 export async function GET(req:Request){
     const url=new URL(req.url)
     const q=url.searchParams.get('q')
